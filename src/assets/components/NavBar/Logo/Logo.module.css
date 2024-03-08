@@ -1,0 +1,28 @@
+.logo{
+    width: 50px;
+    height: auto;
+    -webkit-animation: rotate-90-cw 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: rotate-90-cw 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+ @-webkit-keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(3600deg);
+              transform: rotate(3600deg);
+    }
+  }
+  @keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  

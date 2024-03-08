@@ -1,0 +1,27 @@
+.summary {
+    padding: 2.2rem 3.2rem 1.8rem 3.2rem;
+    width: 100%;
+    background-color: #923c78;
+    margin-bottom: 2rem;
+  }
+  
+  .summary h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .summary div {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .summary p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+  }
