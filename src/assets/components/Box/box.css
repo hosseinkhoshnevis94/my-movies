@@ -28,6 +28,7 @@
 
 .box70 {
   flex: 0 0 68%; 
+  border: none;
 
 }
 @media all and (max-width:600px) {

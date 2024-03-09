@@ -30,7 +30,6 @@ body {
 
   color: var(--color-text);
   background-color: var(--color-background-900);
-  padding: 2.4rem;
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +45,8 @@ body {
 }
 .container{
   max-width: 1260px;
-  margin: 0 auto;
+    margin: 0 auto;
+    padding: 2.5rem;
 }
 
 

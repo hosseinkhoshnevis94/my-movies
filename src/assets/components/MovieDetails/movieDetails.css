@@ -11,24 +11,31 @@
   }
   
   .details section {
-    padding: 4rem;
+    padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+    font-size: 1.3rem;
+  }
+  .details section p span{
+   color: #ff9999;
+   font-weight: 700;
   }
   
   .details img {
     width: 33%;
+    object-fit: cover;
   }
   
   .details-overview {
     width: 100%;
-    padding: 2.4rem 3rem;
+    padding: 1.2rem 1.2rem;
     background-color: var(--color-background-100);
     display: flex;
     color: var(--color-background-900);
     flex-direction: column;
-    gap: 1.4rem;
+    gap: 1rem;
+    font-size: ;
   }
   
   .details-overview h2 {
@@ -109,14 +116,10 @@
     border: none;
     background: linear-gradient(45deg, #ff9999, #66ccff, #ffcc66, #99ff99);
     color: var(--color-background-900);
-    font-family: sans-serif;
-    font-size: 2.4rem;
-    font-weight: bold;
+    font-size: 2rem;
     cursor: pointer;
     z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
   }
   .btn-toggle {
     position: absolute;

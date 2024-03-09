@@ -14,6 +14,7 @@ import useLocalStorage from "./assets/hooks/useLocalstorage";
 import useMovies from "./assets/hooks/useMovies";
 import scrollToTop from "./assets/utils/scrollToTop";
 import BackToTop from "./assets/components/BackToTop/BackToTop";
+import Footer from "./assets/components/Footer/Footer";
 
 
  const App = () => {
@@ -43,6 +44,7 @@ import BackToTop from "./assets/components/BackToTop/BackToTop";
  
 
   return (
+    <div>
     <div className="container">
       <NavBar>
         <SearchInput query={query} setQuery={setQuery} />
@@ -77,6 +79,8 @@ import BackToTop from "./assets/components/BackToTop/BackToTop";
         </Box>}
       </Main>
       <BackToTop></BackToTop>
+    </div>
+      <Footer></Footer>
     </div>
   );
 }

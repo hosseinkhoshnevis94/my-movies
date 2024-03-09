@@ -1,0 +1,14 @@
+/* Footer styles */
+.footer {
+    background-color: var(--color-background-500); /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    text-align: center; /* Center-align text */
+    margin-top: 150px;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limit width of content */
+    margin: 0 auto; /* Center content */
+  }
+  

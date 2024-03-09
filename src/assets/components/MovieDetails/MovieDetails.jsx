@@ -21,8 +21,10 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
     Actors: actors,
     Director: director,
     Genre: genre,
+    Awards:awards
     
   } = movie;
+  console.log(movie);
   //closing movie by scape key
   useKey("Escape",onCloseMovie)
   //changing the document title
@@ -65,9 +67,7 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
         ) : (
           <>
             <header>
-              <button className="btn-back" onClick={onCloseMovie}>
-                &larr;
-              </button>
+              <button className="btn-back" onClick={onCloseMovie}>&larr;</button>
               <img src={movie.Poster=='N/A' ? noImage :movie.Poster} alt={`Poster of ${movie} movie`} />
               <div className="details-overview">
                 <h2>{title}</h2>
@@ -76,8 +76,7 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
                 </p>
                 <p>{genre}</p>
                 <p>
-                  <span>⭐️</span>
-                  {imdbRating} IMDb rating
+                  IMDb: {imdbRating} 
                 </p>
               </div>
             </header>
@@ -104,11 +103,10 @@ export default function MovieDetails({ selectedId, onCloseMovie, onAddWatched, w
                   </p>
                 )}
               </div>
-              <p>
-                <em>{plot}</em>
-              </p>
-              <p>Starring:{actors}</p>
-              <p>Directed by: {director}</p>
+              <p><span>Summary:</span> {plot}</p>
+              <p> <span>Starring:</span> {actors}</p>
+              <p><span>Directed by:</span> {director}</p>
+              <p><span>Awards:</span> {awards}</p>
             </section>
           </>
         )}
