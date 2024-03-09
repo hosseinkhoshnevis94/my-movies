@@ -9,3 +9,10 @@
     
   
 }
+@media all and (max-width:600px){
+    .navBar{
+
+        padding: 0 1rem
+    
+    }  
+}

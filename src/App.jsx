@@ -12,17 +12,20 @@ import Loader from "./assets/components/Loader/Loader";
 import NumResults from "./assets/components/NumResult/NumResult";
 import useLocalStorage from "./assets/hooks/useLocalstorage";
 import useMovies from "./assets/hooks/useMovies";
+import scrollToTop from "./assets/utils/scrollToTop";
+import BackToTop from "./assets/components/BackToTop/BackToTop";
 
 
-export default function App() {
+ const App = () => {
   const  {query,setQuery,movies,isLoading,error } = useMovies(handleCloseMovie)
   const {value:watched, setValue:setWatched} = useLocalStorage('watched',[])
   const [selectedId, setSelectedId] = useState(null);
 
-
+  
   function handleSelectMovie(id) {
     setSelectedId(id);
-    console.log(id);
+    scrollToTop()
+    
   }
 
   function handleCloseMovie() {
@@ -72,9 +75,10 @@ export default function App() {
           )}
           {error && <ErrorMessage>{error+"!"}</ErrorMessage>}
         </Box>}
-
-       
       </Main>
+      <BackToTop></BackToTop>
     </div>
   );
 }
+
+export default  App 
