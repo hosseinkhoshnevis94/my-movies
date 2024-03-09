@@ -4,3 +4,8 @@
     gap: 2.4rem;
     justify-content: center;
   }
+@media all and (max-width:600px) {
+  .main{
+    flex-direction: column;
+  }
+}

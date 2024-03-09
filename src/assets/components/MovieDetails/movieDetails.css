@@ -7,6 +7,7 @@
   
   .details header {
     display: flex;
+    position: relative;
   }
   
   .details section {

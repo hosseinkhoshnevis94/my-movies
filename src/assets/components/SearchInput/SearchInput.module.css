@@ -18,3 +18,13 @@
     box-shadow:0px 0px 0rem 1px rgb(239 239 239 / 50%);
     transform: translateY(-2px);
   }
+
+  @media all and (max-width:600px) {
+    .searchInput {
+      justify-self: center;
+      border: none;
+      padding: 0.8rem 1.3rem;
+      font-size: 1.5rem;
+
+    }
+  }

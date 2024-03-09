@@ -30,4 +30,9 @@
   flex: 0 0 68%; 
 
 }
+@media all and (max-width:600px) {
+  .box30{
+    position: inherit;
+  }
+}
 
