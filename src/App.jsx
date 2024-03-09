@@ -44,8 +44,9 @@ import Footer from "./assets/components/Footer/Footer";
  
 
   return (
-    <div>
-    <div className="container">
+    <>
+
+      <div className="container">
       <NavBar>
         <SearchInput query={query} setQuery={setQuery} />
        {movies.length>0 && <NumResults movies={movies} />}
@@ -79,9 +80,10 @@ import Footer from "./assets/components/Footer/Footer";
         </Box>}
       </Main>
       <BackToTop></BackToTop>
-    </div>
+      </div>
       <Footer></Footer>
-    </div>
+
+    </>
   );
 }
 
