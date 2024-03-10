@@ -18,7 +18,7 @@
   border: 1px solid var(--color-primary)
 }
 .box30 {
-  flex: 0 0 30%;
+  flex: 0 0 35%;
   background-color:transparent ;
   position: sticky;
   top: 2rem;
@@ -27,7 +27,7 @@
 }
 
 .box70 {
-  flex: 0 0 68%; 
+  flex: 0 0 63%; 
   border: none;
 
 }
