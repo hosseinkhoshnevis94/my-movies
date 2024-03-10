@@ -1,7 +1,7 @@
 .navBar{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 7.2rem;
     padding: 0 3.2rem;
     background-color: var(--color-primary);
@@ -9,10 +9,21 @@
     
   
 }
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+gap: 10%;
+}
+
 @media all and (max-width:600px){
     .navBar{
 
         padding: 0 1rem
     
+    }
+    .left{
+
+        gap: 2%;
     }  
 }

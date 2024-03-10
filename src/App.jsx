@@ -15,6 +15,7 @@ import useMovies from "./assets/hooks/useMovies";
 import scrollToTop from "./assets/utils/scrollToTop";
 import BackToTop from "./assets/components/BackToTop/BackToTop";
 import Footer from "./assets/components/Footer/Footer";
+import Logo from "./assets/components/NavBar/Logo/Logo";
 
 
  const App = () => {
@@ -47,9 +48,8 @@ import Footer from "./assets/components/Footer/Footer";
     <>
 
       <div className="container">
-      <NavBar>
-        <SearchInput query={query} setQuery={setQuery} />
-       {movies?.length>0 && <NumResults movies={movies} />}
+      <NavBar query={query} setQuery={setQuery} movies={movies}>
+       
       </NavBar>
       <Main>
       <Box className='box30 colorful-border'>

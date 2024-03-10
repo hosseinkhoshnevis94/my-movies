@@ -1,5 +1,6 @@
 /* Footer styles */
 .footer {
+ 
     background-color: var(--color-background-500); /* Background color */
     color: #fff; /* Text color */
     padding: 20px; /* Padding */
@@ -13,3 +14,9 @@
     margin: 0 auto; /* Center content */
   }
   
+  @media all and (max-width:600px){
+    .footer {
+      margin-top: 214px;
+
+      }
+  }

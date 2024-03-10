@@ -26,14 +26,6 @@ html {
   font-size: 62.5%;
 }
 
-#root{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-
-}
 body {
 
   color: var(--color-text);
@@ -52,10 +44,10 @@ body {
   border-radius: 10px;
 }
 .container{
-    width: 1260px;
+  max-width: 1260px;
     margin: 0 auto;
     padding: 2.5rem;
-}
+  }
 
 
 
