@@ -18,7 +18,7 @@ import Footer from "./assets/components/Footer/Footer";
 
 
  const App = () => {
-  const  {query,setQuery,movies,isLoading,error } = useMovies(handleCloseMovie)
+  const {query,setQuery,movies,isLoading,error } = useMovies(handleCloseMovie)
   const {value:watched, setValue:setWatched} = useLocalStorage('watched',[])
   const [selectedId, setSelectedId] = useState(null);
 
@@ -49,7 +49,7 @@ import Footer from "./assets/components/Footer/Footer";
       <div className="container">
       <NavBar>
         <SearchInput query={query} setQuery={setQuery} />
-       {movies.length>0 && <NumResults movies={movies} />}
+       {movies?.length>0 && <NumResults movies={movies} />}
       </NavBar>
       <Main>
       <Box className='box30 colorful-border'>
